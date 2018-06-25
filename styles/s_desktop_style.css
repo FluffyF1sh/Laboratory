@@ -57,6 +57,9 @@
     margin-left: 1vw;
 }
 .search{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     color: green;   
     margin-left: 10vw;
     font-size: 1.5vw; 
@@ -68,7 +71,6 @@ input[type="search"]{
     width: 17vw;
     font-size: 1vw; 
     vertical-align: middle;
-
 }
 input[type="submit"]{
     border: none;
@@ -207,6 +209,8 @@ input[type="submit"]{
     margin-top: 1vw; 
     margin-left: 2vw; 
     display: flex;
+    flex-direction: row;
+    justify-content: center;
     height: 1.2vw;
     vertical-align: middle;
     font-size: 1vw; 
