@@ -7,7 +7,7 @@
     display: grid;
     height: 100vh;
     margin: 0em;
-    background-image: url(/assets/bbdy.jpg);
+    background-image: url(../assets/bbdy.jpg);
     background-attachment: fixed;
     background-size: cover;
 }
@@ -169,7 +169,7 @@ input[type="submit"]{
     grid-area: footer;
     background-color: black;
 }
-.footer-style1{
+.footer_style1{
     margin-left: auto;
     margin-right: auto;
     display: flex;
@@ -179,7 +179,7 @@ input[type="submit"]{
     font-size: 1vw;
     color: white;
 }
-.footer-style span{
+.footer_style1 span{
     margin-left: 0.8vw;
     text-align: justify;
 }
@@ -190,8 +190,8 @@ input[type="submit"]{
 .footer_img2{
     margin-top: -1.6vw;
 }
-.footer-style2{
-    margin-left: 17vw;
+.footer_style2{
+    margin-left: 27vw;
     margin-right: 17vw;
     display: flex;
     flex-direction:row;
@@ -201,7 +201,7 @@ input[type="submit"]{
 }
 .follow_string{
     margin-top: 1vw; 
-    margin-left: 0.7vw; 
+    margin-left: 2vw; 
     display: flex;
     height: 1.2vw;
     vertical-align: middle;
