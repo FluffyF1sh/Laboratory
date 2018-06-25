@@ -1,0 +1,2 @@
+@import url(a_mobile_style.css)(max-width: 768px);
+@import url(a_desktop_style.css)(min-width: 1024px);

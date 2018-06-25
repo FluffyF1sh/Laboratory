@@ -1,0 +1,140 @@
+.grid_item{
+    font-family:'Courier New', Courier, monospace;
+    font-size: 1em;
+}
+.grid_container{
+    display: grid;
+    height: 100vh;
+    margin: 0em;
+    background-image: url(/assets/bbdy.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+.grid_container{
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.1fr 0.1fr 0.5fr 0.5fr 0.1fr;
+    grid-template-areas: "header"
+                         "h-low"
+                         "content1"
+                         "content2"
+                         "footer";
+}
+.header{
+    grid-area: header;
+    background: linear-gradient(to bottom, rgb(54, 54, 54), black);
+}
+.header_low{ 
+    grid-area: h-low;
+    background-color: black;
+}
+.hlow_style{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start; 
+}
+.header_style{
+    margin-top: 1vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start; 
+}
+.header_style img{
+    width: 4%; 
+    height: 4%;
+}
+.zagolovok{
+    font-style: italic; 
+    font-size: 2.6vw; 
+    font-weight: bold;
+    padding-left: 0.1vw; 
+    text-shadow: 0.02em 0.02em black; 
+    color: green;   
+    margin-left: 0.1vw;
+}
+.search{
+    color: green;   
+    margin-left: 3vw;
+    font-size: 2vw; 
+}
+input[type="search"]{
+    margin-left: 1vw; 
+    height: 1.1vw;
+    width: 14vw;
+    font-size: 1vw; 
+    vertical-align: middle;
+}
+input[type="submit"]{
+    border: none;
+    outline: none;
+    margin-top: 1vw; 
+    width: 2.8vw;
+    height: 1.1vw; 
+}
+.header_button{
+    border: 0.1vw white solid;
+    border-radius: 0.5vw;
+    color: green;
+    text-align: center;
+    font-size: 2vw;
+    font-weight: bold;
+    width: 13.3%;
+    padding: 1vw;
+}
+.header_button:hover{
+    background-color: beige;
+    border-color: green; 
+}
+.cart_button{
+    border: 0.1vw white solid;
+    padding: 0.7vw;
+    margin-left: 14vw;
+    border-radius: 0.8vw;
+    text-align: center;
+    font-size: 2vw;
+    background-attachment: initial;
+    background-size: cover;
+    background-color: rgb(155, 60, 100);
+    font-weight: bold;
+}
+.content_box1{
+    grid-area: content1;
+    padding: 1vw;
+}
+.category_title{
+    font-size: 4vw;
+    text-align: left;
+    color:white;
+    text-shadow: black 0.1em 0.1em ;
+}
+.item{
+    margin: 2vw;
+    box-sizing: border-box;
+    border: 0.07em white solid;
+    border-radius: 0.5em;
+    padding: 1vw;
+    max-width:38%;
+    background:black;    
+    color: black;
+    text-align: center;
+}
+.img_item{
+    border: 0.1vw black solid; 
+    border-radius: 0.5vw;
+    background-color: rgb(255, 255, 255);  
+    max-width: 80%;
+}
+.item_description{
+    font-size: 4.4vw;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+}
+.item_button{
+    margin-top: 0.7vw;
+    background-color: white;
+    font-size: 3vw;
+    font-weight: bold;
+    text-align: center;
+}
