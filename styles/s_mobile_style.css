@@ -187,7 +187,6 @@ input[type="submit"]{
     color: white;
 }
 .follow_string{
-    margin-top: 2.5vw; 
     display: flex;
     flex-direction: row;
     justify-content: center;
