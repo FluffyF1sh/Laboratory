@@ -12,7 +12,7 @@
 }
 .grid_container{
     grid-template-columns: 1fr;
-    grid-template-rows: 0.1fr 0.1fr 0.5fr 0.5fr 0.1fr;
+    grid-template-rows: 0.2fr 0.1fr 0.5fr 0.5fr 0.1fr;
     grid-template-areas: "header"
                          "h-low"
                          "content1"
@@ -25,13 +25,14 @@
 }
 .header_low{ 
     grid-area: h-low;
+    height: 10vw;
     background-color: black;
 }
 .hlow_style{
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: flex-start; 
+    justify-content: space-between; 
 }
 .header_style{
     margin-top: 1vw;
@@ -41,12 +42,12 @@
     justify-content: flex-start; 
 }
 .header_style img{
-    width: 4%; 
-    height: 4%;
+    width: 10%; 
+    height: 10%;
 }
 .zagolovok{
     font-style: italic; 
-    font-size: 2.6vw; 
+    font-size: 4.4vw; 
     font-weight: bold;
     padding-left: 0.1vw; 
     text-shadow: 0.02em 0.02em black; 
@@ -55,31 +56,32 @@
 }
 .search{
     color: green;   
-    margin-left: 3vw;
-    font-size: 2vw; 
+    margin-left: 0.3vw;
+    font-weight: bold;
+    font-size: 3vw; 
 }
 input[type="search"]{
     margin-left: 1vw; 
-    height: 1.1vw;
+    height: 1.6vw;
     width: 14vw;
     font-size: 1vw; 
     vertical-align: middle;
 }
 input[type="submit"]{
     border: none;
-    outline: none;
-    margin-top: 1vw; 
-    width: 2.8vw;
-    height: 1.1vw; 
+    margin-top: 3vw; 
+    width: 4vw;
+    height: 1.3vw; 
 }
 .header_button{
-    border: 0.1vw white solid;
+    border: 0.15vw white solid;
     border-radius: 0.5vw;
+    margin-top: 2vw;
     color: green;
     text-align: center;
-    font-size: 2vw;
+    font-size: 4vw;
     font-weight: bold;
-    width: 14%;
+    width: 25%;
     padding: 1vw;
 }
 .header_button:hover{
@@ -87,14 +89,12 @@ input[type="submit"]{
     border-color: green; 
 }
 .cart_button{
-    border: 0.1vw white solid;
+    border: 0.15vw white solid;
     padding: 0.7vw;
-    margin-left: 14vw;
+    margin-left: 10vw;
     border-radius: 0.8vw;
     text-align: center;
-    font-size: 2vw;
-    background-attachment: initial;
-    background-size: cover;
+    font-size: 4vw;
     background-color: rgb(155, 60, 100);
     font-weight: bold;
 }
