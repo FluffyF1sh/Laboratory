@@ -15,12 +15,12 @@
     grid-template-columns: 1fr;
     grid-template-rows: 0.1fr 0.1fr 1fr 1fr 0.7fr;
     grid-template-areas: "header"
-                         "h-low"
                          "content1"
                          "cont_box2"
                          "footer";
 }
 .header{
+    position: fixed;
     grid-area: header;
     background: linear-gradient(to bottom, rgb(54, 54, 54), black);
 }
@@ -28,17 +28,11 @@
     width: 8%;
     height: 8%;
 }
-.header_low{ 
-    grid-area: h-low;
-    background-color: black;
-}
 .hlow_style{
     display: flex;
     flex-direction: row;
-    align-items: center;
     justify-content: flex-start; 
-    margin-top: -1.3vw;
-    margin-bottom: -0.8vw;
+    margin-bottom: -.5vw;
 }
 .header_style{
     margin-top: -1vw;
@@ -86,6 +80,7 @@ input[type="submit"]{
     border: 0.1vw white solid;
     padding: 0.5vw;
     border-radius: 0.5vw;
+    margin-top: 0.5vw; 
     margin-right: 0.7vw;
     color: green;
     text-align: center;
@@ -110,6 +105,7 @@ input[type="submit"]{
 }
 .content_box1{
     grid-area: content1;
+    margin-top: 10vw;
     padding: 1vw;
 }
 .category_title{
@@ -176,32 +172,31 @@ input[type="submit"]{
     background-color: black;
 }
 .footer_style1{
-    margin-left: auto;
-    margin-right: auto;
     display: flex;
     flex-direction:row;
     justify-content:center;
-    vertical-align: middle;
+    margin: auto 15vw;
     font-size: 1vw;
     color: white;
 }
-.footer_style1 span{
+.footer_style1 p{
     margin-left: 0.8vw;
     text-align: justify;
 }
-.footer_img1{
-    height: 7%;
-    width: 7%;
+.footer_style1 img{
+    margin: auto .6vw;
+    vertical-align: middle;
+    width: 10%;
+    height: 10%;
 }
 .footer_img2{
     margin-top: -1.6vw;
 }
 .footer_style2{
-    margin-left: 27vw;
-    margin-right: 17vw;
+    margin: auto 15vw;
     display: flex;
     flex-direction:row;
-    justify-content:left;
+    justify-content: center;
     font-size: 1vw;
     color: white;
 }
