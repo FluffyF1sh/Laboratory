@@ -73,7 +73,7 @@ input[type="submit"]{
     width: 1.2vw;
     height: 1.2vw;
     margin-right: 9vw; 
-    background-image: url(/assets/search.PNG);
+    background-image: url(../assets/search.PNG);
     background-size: cover;
 }
 .header_button{
