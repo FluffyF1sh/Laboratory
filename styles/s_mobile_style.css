@@ -4,7 +4,7 @@
     display: grid;
     height: 100vh;
     margin: 0em;
-    background-image: url(/assets/bbdy.jpg);
+    background-image: url(../assets/bbdy.jpg);
     background-attachment: fixed;
     background-size: cover;
 }
@@ -71,7 +71,7 @@ input[type="submit"]{
 }
 .header_button{
     display: none;
-    background-image: url(/assets/bbdy.jpg);
+    background-image: url(../assets/bbdy.jpg);
     border: 0.15vw white solid;
     border-radius: 0.5vw;
     margin-top: 1vw;
