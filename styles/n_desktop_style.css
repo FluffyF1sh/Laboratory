@@ -1,10 +1,5 @@
-
-.grid_item{
-    font-family:'Courier New', Courier, monospace;
-    font-size: 1em;
-    padding: 1em;
-}
 .grid_container{
+    font-family:'Courier New', Courier, monospace;
     display: grid;
     height: 100vh;
     margin: 0em;
@@ -20,88 +15,78 @@
                          "cont_box"
                          "footer";
 }
-.header{
+.header{ 
     position: fixed;
     grid-area: header;
     background: linear-gradient(to bottom, rgb(54, 54, 54), black);
 }
-.header img{
+.Logo{
     width: 5%;
     height: 5%;
 }
-.hlow_style{
+.menu div{
+    display: none;
+}
+.menu_style{
+    list-style: none;
     display: flex;
     flex-direction: row;
     justify-content: flex-start; 
-    margin-bottom: -.8vw;
 }
-.header_style{
-    margin-top: -1vw;
+.submenu{
+    list-style: none;
     display: flex;
     flex-direction: row;
+    justify-content: flex-start; 
+}
+.header_style{
+    display: flex;
+    flex-direction: row;
+    vertical-align: center;
     align-items: center;
     justify-content: flex-start; 
 }
-.zagolovok{
+.headline{
     font-style: italic; 
     font-size: 1.8vw; 
     font-weight: bold;
     padding-left: 0.6em; 
     text-shadow: 0.02em 0.02em black; 
     color: green;   
-    margin-left: 1vw;
+    margin-left: .5vw;
 }
 .search{
     display: flex;
     flex-direction: row;
-    justify-content: center;
     color: green;   
+    margin-top: .5vw;
     margin-left: 10vw;
     font-size: 1.2vw; 
     font-weight: bold;
 }
 input[type="search"]{
-    margin-left: 1vw; 
     height: 1.2vw;
-    width: 17vw;
+    max-width: 100%;
     font-size: 1vw; 
-    vertical-align: middle;
 }
 input[type="submit"]{
-    border: none;
-    outline: none;
-    margin-left: 0.2vw; 
-    width: 1.2vw;
+    max-width: 100%;
     height: 1.2vw;
     margin-right: 9vw; 
-    background-image: url(../assets/search.PNG);
-    background-size: cover;
 }
 .header_button{
     border: 0.1vw white solid;
-    padding: 0.5vw;
     border-radius: 0.5vw;
+    padding: 0.4vw;
     margin-right: 0.7vw;
     color: green;
     text-align: center;
-    font-size: 1.6em;
+    font-size: 1.1em;
     font-weight: bold;
 }
 .header_button:hover{
     background-color: beige;
     border-color: green; 
-}
-.cart_button{
-    border: 0.1vw white solid;
-    padding: 0.4vw;
-    margin-left: 16vw;
-    border-radius: 0.8vw;
-    text-align: center;
-    font-size: 1.8em;
-    background-attachment: initial;
-    background-size: cover;
-    background-color: rgb(155, 60, 100);
-    font-weight: bold;
 }
 .category_title{
     font-size: 2vw;
@@ -114,7 +99,7 @@ input[type="submit"]{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-top: 7vw;
+    margin-top: 5vw;
     padding: 1vw;
 }
 .include{
@@ -152,28 +137,31 @@ input[type="submit"]{
 }
 .news_bottom{
     display: flex;
-    flex-direction:row;
+    flex-wrap: wrap;
     font-size: 1.2vw;
 } 
-.news_comments{
-    display: flex;
+.comments {
     border: 2px solid black;
-    margin-left: 1vw;
-    flex-basis: 120%;
 }
-.news_comments div{
-    padding-left: 0.3vw; 
-}
-.news_comments input{
+.comments input:first-child {
     height: 7%;
-    width: 80%;
-    margin: 0 1.4em 1em 1em;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    width: 48%;
+    margin: 0 0 1vw 0;
 }
-.news_comments textarea{
-    width: 80%;
-    margin: 0 1.4em 1em 1em;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+.comments input:nth-child(2) {
+    height: 7%;
+    width: 48%;
+    margin: 0 0 1vw 0;
+}
+.comments textarea {
+    margin-bottom: .7vw;;
+    width: 97%;
+    display: block;
+}
+.comments input:last-of-type {
+    height: 15%;
+    width: 20%;
+    margin: 0 0 0 1vw;
 }
 .exclude{
     flex-shrink: 2;

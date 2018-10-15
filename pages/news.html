@@ -11,30 +11,34 @@
 </head>
 
 <body class="grid_container">
-        <div class="header grid_item">
-                <div class="header_style">
-                    <img src="../assets/hlogo.png">
-                    <div class="zagolovok">
-                        <a style="text-decoration: none; color: green;" href="../index.html">West-Tek power armor</a>
-                    </div>
-                    <div class="search">Поиск
-                        <input type="search" name="search-bar">
-                        <input type="submit" name="submit" value=" ">
-                    </div>
-                    <div class="cart_button">Корзина</div>
-                </div>
-                <div class="hlow_style">
-                    <div class="header_button">
-                        <a style="text-decoration: none; color: green;" href="../index.html">Магазин</a>
-                    </div>
-                    <div class="header_button">
-                        <a style="text-decoration: none; color: green;" href="about.html">О компании</a>
-                    </div>
-                    <div class="header_button">
-                        <a style="text-decoration: none; color: green;" href="https://mamaikan.github.io/Nuka-Cola/index.html">Nuka-Cola</a>
-                    </div>
-                </div>
+    <div class="header">
+        <div class="header_style">
+            <img class="Logo" src="../assets/hlogo.png">
+            <div class="headline">
+                <a style="text-decoration: none; color: green;" href="../index.html">West-Tek power armor</a>
             </div>
+            <ul class="menu_style">
+                <li class="menu"><div>Меню</div>
+                    <ul class="submenu">
+                        <li class="search">
+                            <input type="search" name="search-bar" placeholder="Введите запрос">
+                            <input type="submit" name="submit" value="Поиск">
+                        </li>
+                        <li class="header_button">
+                            <a style="text-decoration: none; color: green;" href="../index.html">Магазин</a>
+                        </li>
+                        <li class="header_button">
+                            <a style="text-decoration: none; color: green;" href="../pages/about.html">О компании</a>
+                        </li>
+                        <li class="header_button">
+                            <a style="text-decoration: none; color: green;" href="https://mamaikan.github.io/Nuka-Cola/index.html">Nuka-Cola</a>
+                        </li>
+                        <li class="header_button"><a style="text-decoration: none; color: green;" href="pages/shop_item.html">Корзина</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
     <div class="content_box">
         <div class="exclude"></div>
         <div class="include">
@@ -45,36 +49,29 @@
                     <div>
                         <h3>Джеймс Кэмерон. Глава отдела новостей 08.12.2024</h3>
                         <p>
-                            В нашем штате сотрудников недосчёт кадров. Мы набираем новый состав рабочих. Принимаются роботы: протектрон, мистер-помощник
-                            (любой серии), мистер-храбрец, робоглаз, робомозг. Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit. Aliquam ac mollis sem. Mauris sit amet ipsum malesuada, molestie ante at, commodo tortor.
-                            Donec a libero ut nunc imperdiet auctor. Etiam malesuada ultrices ipsum, a efficitur ex porttitor
-                            id. Nullam sem nibh, consectetur et fermentum eu, suscipit quis metus. Aenean eget lacinia risus.
-                            Suspendisse tempus lectus at augue ultrices, a molestie diam vehicula.
+                            В нашем штате сотрудников недосчёт кадров. Мы набираем новый состав рабочих. Принимаются
+                            роботы: протектрон, мистер-помощник
+                            (любой серии), мистер-храбрец, робоглаз, робомозг. 
                         </p>
                     </div>
                 </div>
                 <div class="news_bottom">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ac mollis sem. Mauris sit amet ipsum malesuada, molestie
-                    ante at, commodo tortor. Donec a libero ut nunc imperdiet auctor. Etiam malesuada ultrices ipsum, a efficitur
-                    ex porttitor id. Nullam sem nibh, consectetur et fermentum eu, suscipit quis metus. Aenean eget lacinia
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ac mollis sem. Mauris sit amet
+                    ipsum malesuada, molestie
+                    ante at, commodo tortor. Donec a libero ut nunc imperdiet auctor. Etiam malesuada ultrices ipsum, a
+                    efficitur
+                    ex porttitor id. Nullam sem nibh, consectetur et fermentum eu, suscipit quis metus. Aenean eget
+                    lacinia
                     risus. Suspendisse tempus mole vehicula. Прошу, только не заменяйте меня на новострона!
-                    <div class="news_comments">
-                        <form>
-                            <div>Ваше имя:
-                                <input type="text" placeholder="Ваше имя">
-                            </div>
-                            <div>Ваш e-mail:
-                                <input type="email" placeholder="Ваш Email">
-                            </div>
-                            <div>Комментарий:
-                                <textarea placeholder="Ваше сообщение"></textarea>
-                            </div>
-                            <div>
-                                <input type="submit" value="отправить">
-                            </div>
-                        </form>
-                    </div>
+                </div>
+                <div class="comments">
+                    <form>
+                        <input type="text" placeholder="Ваше Имя">
+                        <input type="email" placeholder="Ваш e-mail">
+                        <div>Комментарий</div>
+                        <textarea placeholder="Ваш комментарий"></textarea>
+                        <input type="submit" value="Отправить">
+                    </form>
                 </div>
             </div>
             <h2 class="news_title">Новый экзоскелет!</h2>
@@ -84,40 +81,39 @@
                     <div>
                         <h3>Новострон 17.02.2043</h3>
                         <p>
-                            Данный экзоскелет является моделью нового поколения, котрорая обходит предыдущую модель в несколько раз! Сидит на человеке
-                            среднего телосложения как влитой. С помощью новейших технологий, вес экзоскелета не ощущается
-                            практически на 99.67%. Даже нося этот костюм без брони, вы гарантируете себе защиту от пуль до
-                            пятидесятого калибра. Данный экзоскелет работает на ядерных блоках, что в свою очередь может
-                            нанести вред вашему здоровью. Проконсультируйтесь с Мистером-врачом, перед тем, как приобретать
-                            данную продукцию компании West-Tek за 3499$! Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit. Aliquam ac mollis sem. Mauris sit amet ipsum malesuada, molestie ante at, commodo tortor.
-                            Donec a libero ut nunc imperdiet auctor. Etiam malesuada ultrices ipsum, a efficitur ex porttitor
-                            id. Nullam sem nibh, consectetur et fermentum eu, suscipit quis metus. Aenean eget lacinia risus.
-                            Suspendisse tempus lectus at augue ultrices, a molestie diam vehicula.
+                            Данный экзоскелет является моделью нового поколения, котрорая обходит предыдущую модель в
+                            несколько раз! Сидит на человеке
+                            среднего телосложения как влитой. С помощью новейших технологий, вес экзоскелета не
+                            ощущается
+                            практически на 99.67%. Даже нося этот костюм без брони, вы гарантируете себе защиту от пуль
+                            до
+                            пятидесятого калибра. Данный экзоскелет работает на ядерных блоках, что в свою очередь
+                            может
+                            нанести вред вашему здоровью. Проконсультируйтесь с Мистером-врачом, перед тем, как
+                            приобретать
+                            данную продукцию компании West-Tek за 3499$! 
                         </p>
                     </div>
                 </div>
                 <div class="news_bottom">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ac mollis sem. Mauris sit amet ipsum malesuada, molestie
-                    ante at, commodo tortor. Donec a libero ut nunc imperdiet auctor. Etiam malesuada ultrices ipsum, a efficitur
-                    ex porttitor id. Nullam sem nibh, consectetur et fermentum eu, suscipit quis metus. Очень надеемся, что
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ac mollis sem. Mauris sit amet
+                    ipsum malesuada, molestie
+                    ante at, commodo tortor. Donec a libero ut nunc imperdiet auctor. Etiam malesuada ultrices ipsum, a
+                    efficitur
+                    ex porttitor id. Nullam sem nibh, consectetur et fermentum eu, suscipit quis metus. Очень надеемся,
+                    что
                     вы не станете использовать экзоскелет в целях нанесения вреда вашим соседям и близким.
-                    <div class="news_comments">
-                        <form>
-                            <div>Ваше имя:
-                                <input type="text" placeholder="Ваше имя">
-                            </div>
-                            <div>Ваш e-mail:
-                                <input type="email" placeholder="Ваш Email">
-                            </div>
-                            <div>Комментарий:
-                                <textarea placeholder="Ваше сообщение"></textarea>
-                            </div>
-                            <div>
-                                <input type="submit" value="отправить">
-                            </div>
-                        </form>
-                    </div>
+                </div>
+                <div class="comments">
+                    <form>
+
+                        <input type="text" placeholder="Ваше Имя">
+
+                        <input type="email" placeholder="Ваш e-mail">
+                        <div>Комментарий</div>
+                        <textarea placeholder="Ваш комментарий"></textarea>
+                        <input type="submit" value="Отправить">
+                    </form>
                 </div>
             </div>
             <h2 class="news_title">Война близко! Пора обратиться в Vault-Tec.</h2>
@@ -127,47 +123,45 @@
                     <div>
                         <h3>Новострон 22.10.2077</h3>
                         <p>
-                            У нас очень плохие новости. Обстановка во всём мире накаляется, что не есть хорошо. Мы очень надеемся, что бомбы не начнут
-                            падать с неба, как капли воды при осеннем дожде. Мы не хотим войны, но если что, наша страна
-                            всегда готова дать ответный огонь. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-                            ac mollis sem. Mauris sit amet ipsum malesuada, molestie ante at, commodo tortor. Donec a libero
-                            ut nunc imperdiet auctor. Etiam malesuada ultrices ipsum, a efficitur ex porttitor id. Nullam
-                            sem nibh, consectetur et fermentum eu, suscipit quis metus. Aenean eget lacinia risus. Suspendisse
-                            tempus lectus at augue ultrices, a molestie diam vehicula.
+                            У нас очень плохие новости. Обстановка во всём мире накаляется, что не есть хорошо. Мы
+                            очень надеемся, что бомбы не начнут
+                            падать с неба, как капли воды при осеннем дожде. Мы не хотим войны, но если что, наша
+                            страна
+                            всегда готова дать ответный огонь.
+                           
                         </p>
                     </div>
                 </div>
                 <div class="news_bottom">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ac mollis sem. Mauris sit amet ipsum malesuada, molestie
-                    ante at, commodo tortor. Donec a libero ut nunc imperdiet auctor. Etiam malesuada ultrices ipsum, a efficitur
-                    ex porttitor id. Nullam sem nibh, consectetur et fermentum eu, suscipit quis metus. Aenean eget lacinia
-                    risus. Suspendisse tempus lectus at augue ultrices, a molestie diam vehicula
-                    <div class="news_comments">
-                        <form>
-                            <div>Ваше имя:
-                                <input type="text" placeholder="Ваше имя">
-                            </div>
-                            <div>Ваш e-mail:
-                                <input type="email" placeholder="Ваш Email">
-                            </div>
-                            <div>Комментарий:
-                                <textarea placeholder="Ваше сообщение"></textarea>
-                            </div>
-                            <div>
-                                <input type="submit" value="отправить">
-                            </div>
-                        </form>
-                    </div>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ac mollis sem. Mauris sit amet
+                    ipsum malesuada, molestie
+                    ante at, commodo tortor. Donec a libero ut nunc imperdiet auctor. Etiam malesuada ultrices ipsum, a
+                    efficitur
+                    ex porttitor id. Nullam sem nibh, consectetur et fermentum eu, suscipit quis metus. Aenean eget
+                    lacinia
+                    risus. Suspendisse tempus lectus at augue ultrices, a molestie diam vehicula-
+                </div>
+                <div class="comments">
+                    <form>
+
+                        <input type="text" placeholder="Ваше Имя">
+
+                        <input type="email" placeholder="Ваш e-mail">
+                        <div>Комментарий</div>
+                        <textarea placeholder="Ваш комментарий"></textarea>
+                        <input type="submit" value="Отправить">
+                    </form>
                 </div>
             </div>
         </div>
         <div class="exclude"></div>
     </div>
-    <div class="footer grid_item">
+    <div class="footer">
         <div class="footer_style1">
             <img src="../assets/footer-logo.png">
             <p>
-                Данный сайт не является подлинным. Это всего лишь лабораторная работа и она в дальнейшем не превратится в новую корпорацию,
+                Данный сайт не является подлинным. Это всего лишь лабораторная работа и она в дальнейшем не превратится
+                в новую корпорацию,
                 которая поработит мир своей продукцией.
             </p>
         </div>
@@ -183,7 +177,7 @@
                 <img class="footer_img3" src="../assets/18.png">
             </div>
         </p>
-    </div>
+    </div>>
 </body>
 
 </html>

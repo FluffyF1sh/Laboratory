@@ -20,112 +20,159 @@
                          "footer";
 }
 .header{
-    grid-area: header;
     background: linear-gradient(to bottom, rgb(54, 54, 54), black);
-}
-.header_low{ 
-    grid-area: h-low;
-    background-color: black;
-}
-.hlow-style{
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start; 
-    margin-top: -1.3vw;
-    margin-bottom: -0.8vw;
+    flex-direction: column;
 }
-.header-style{
-    margin-top: -1vw;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start; 
+.Logo{
+    display: none;
 }
-.header-style img{
-    width: 5%; 
-    height: 5%;
-}
-.zagolovok{
+.headline{
     font-style: italic; 
-    font-size: 5vw; 
+    font-size: 7vw; 
     font-weight: bold;
-    padding-left: 0.6em; 
     text-shadow: 0.02em 0.02em black; 
     color: green;   
-    margin-left: 1vw;
+}
+.menu{
+    border: .3vw solid white;
+    padding: .7vw;
+    font-size: 4vw;
+    margin-left: 2vw;
+    color: white;
+}
+ul{
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    list-style: none;
+}
+li{
+    display: block;
+}
+.submenu{
+    position: relative;
 }
 .search{
-    color: green;   
-    margin-left: 10vw;
-    font-size: 5vw; 
+    display: none;
 }
 input[type="search"]{
-    margin-left: 1vw; 
-    height: 1.1vw;
-    width: 17vw;
-    font-size: 1vw; 
+    height: 6vw;
+    width: 100%;
+    font-size: 5vw; 
     vertical-align: middle;
 }
 input[type="submit"]{
     border: none;
-    outline: none;
-    margin-left: 0.2vw; 
-    width: 2.8vw;
-    height: 1.1vw;
-    margin-right: 9vw; 
+    font-size: 4.5vw; 
+    width: 100%;
+    height: 6vw; 
+    vertical-align: middle;
 }
 .header_button{
-    border: 0.1vw white solid;
+    display: none;
+    background-image: url(/assets/bbdy.jpg);
+    border: 0.15vw white solid;
     border-radius: 0.5vw;
     color: green;
     text-align: center;
-    font-size: 1.6em;
+    font-size: 6vw;
     font-weight: bold;
-    width: 15%;
+    padding: 5vw;
 }
-.header_button:hover{
-    background-color: beige;
-    border-color: green; 
-}
-.cart_button{
-    border: 0.1vw white solid;
-    padding: 0.7vw;
-    margin-left: 16vw;
-    border-radius: 0.8vw;
-    text-align: center;
-    font-size: 1.8em;
-    background-attachment: initial;
-    background-size: cover;
-    background-color: rgb(155, 60, 100);
-    font-weight: bold;
+ul:hover li{
+    display: block;
+    margin-top: 1vw;
 }
 .content_box1{
     grid-area: content1;
-    padding: 1vw;
+    padding: 0vw;
 }
 .category_title{
-    font-size: 2vw;
-    text-align: left;
+    font-size: 10vw;
+    text-align: center;
     color:white;
     text-shadow: black 0.1em 0.1em ;
 }
 .item{
     display: block;
-    position: static;
-    margin: 2vw;
+    float: left;
     box-sizing: border-box;
     border: 0.07em white solid;
     border-radius: 0.5em;
-    padding: 1vw;
-    width:20vw; 
-    height: 26vw;
+    padding: 2vw;
+    width:47%;
     background:black;    
     color: black;
+    text-align: center;
 }
 .img_item{
     border: 0.1vw black solid; 
-    border-radius: 0.5vw;
+    border-radius: 2vw;
     background-color: rgb(255, 255, 255);  
     max-width: 100%;
+}
+.item_description{
+    font-size: 4vw;
+    font-weight: bold;
+    color: white;
+}
+.item_button{
+    background-color: white;
+    font-size: 4vw;
+    font-weight: bold;
+}
+.content_box2{
+    grid-area: content2;
+    padding: 2vw;
+}
+.slot{
+    display: block;
+    float: left;
+    margin: 1vw;
+    box-sizing: border-box;
+    border: 0.07em white solid;
+    border-radius: 0.5em;
+    padding: 2vw;
+    max-width:47%;
+    background:black;    
+    color: black;
+    text-align: center;
+}
+.footer{
+    grid-area: footer;
+    background-color: black;
+}
+.footer_style1{
+    font-size: 3vw;
+    color: white;
+}
+.footer_style1 img{
+    display: none;
+}
+.footer_style1 p{
+    margin: 1vw;
+    text-align: justify;
+}
+.footer_style2{
+    margin-left: 1vw;
+    font-size: 3vw;
+    color: white;
+}
+.footer_img2{
+    display: none;
+}
+.follow_string{
+   display: block;
+}
+input[type="email"]{ 
+    max-width: 100%;
+}
+input[type="button"]{
+    border: none;
+    font-size: 3vw;
+    max-width: 100%;
+}
+.footer_img3{
+    display: none;
 }

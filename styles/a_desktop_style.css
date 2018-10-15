@@ -1,10 +1,5 @@
-
-.grid_item{
-    font-family:'Courier New', Courier, monospace;
-    font-size: 1em;
-    padding: 1em;
-}
 .grid_container{
+    font-family:'Courier New', Courier, monospace;
     display: grid;
     height: 100vh;
     margin: 0em;
@@ -20,88 +15,74 @@
                          "cont_box"
                          "footer";
 }
-.header{
+.header{ 
     position: fixed;
     grid-area: header;
     background: linear-gradient(to bottom, rgb(54, 54, 54), black);
 }
-.header img{
+.Logo{
     width: 5%;
     height: 5%;
 }
-.hlow_style{
+.menu div{
+    display: none;
+}
+.menu_style{
+    list-style: none; 
+}
+.submenu{
+    list-style: none;
     display: flex;
     flex-direction: row;
     justify-content: flex-start; 
-    margin-bottom: -.8vw;
 }
 .header_style{
-    margin-top: -1vw;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: flex-start; 
 }
-.zagolovok{
+.headline{
     font-style: italic; 
     font-size: 1.8vw; 
     font-weight: bold;
     padding-left: 0.6em; 
     text-shadow: 0.02em 0.02em black; 
     color: green;   
-    margin-left: 1vw;
+    margin-left: .5vw;
 }
 .search{
     display: flex;
     flex-direction: row;
-    justify-content: center;
     color: green;   
+    margin-top: .5vw;
     margin-left: 10vw;
     font-size: 1.2vw; 
     font-weight: bold;
 }
 input[type="search"]{
-    margin-left: 1vw; 
     height: 1.2vw;
-    width: 17vw;
+    max-width: 100%;
     font-size: 1vw; 
-    vertical-align: middle;
 }
 input[type="submit"]{
-    border: none;
-    outline: none;
-    margin-left: 0.2vw; 
-    width: 1.2vw;
+    max-width: 100%;
     height: 1.2vw;
     margin-right: 9vw; 
-    background-image: url(../assets/search.PNG);
-    background-size: cover;
 }
 .header_button{
     border: 0.1vw white solid;
-    padding: 0.5vw;
     border-radius: 0.5vw;
+    padding: 0.4vw;
     margin-right: 0.7vw;
     color: green;
     text-align: center;
-    font-size: 1.6em;
+    font-size: 1.1em;
     font-weight: bold;
 }
 .header_button:hover{
     background-color: beige;
     border-color: green; 
-}
-.cart_button{
-    border: 0.1vw white solid;
-    padding: 0.4vw;
-    margin-left: 16vw;
-    border-radius: 0.8vw;
-    text-align: center;
-    font-size: 1.8em;
-    background-attachment: initial;
-    background-size: cover;
-    background-color: rgb(155, 60, 100);
-    font-weight: bold;
 }
 .category_title{
     font-size: 2vw;
@@ -131,6 +112,7 @@ input[type="submit"]{
 .workers{
     display: flex;
     flex-wrap: wrap;
+    padding: .4vw;
 }
 .workers div{
     flex-basis: 0;
@@ -140,7 +122,7 @@ input[type="submit"]{
     margin-left: 1vw;
 }
 .workers img{
-    width: 100%;
+    max-width: 100%;
     vertical-align: middle;
 }
 .workers h3{
@@ -150,9 +132,34 @@ input[type="submit"]{
     font-size: 1vw;
     text-align: justify;
 }
-.vacancy{
+.vacancy form{
+    border: 2px solid black;
     display: flex;
+    flex-direction: row;
+    padding: 1vw
 }
+.vacancy div{
+
+}
+.vacancy input{
+    height: 10%;
+    width: 100%;
+}
+.vacancy select {
+    height: 10%;
+    width: 100%;
+}
+.vacancy textarea {
+    width: 100%;
+    height: 60%;
+    margin-bottom: 1vw;
+    display: block;
+}
+
+
+
+
+
 .footer{
     grid-area: footer;
     background-color: black;

@@ -11,28 +11,32 @@
 </head>
 
 <body class="grid_container">
-    <div class="header grid_item">
+    <div class="header">
         <div class="header_style">
-            <img src="assets/hlogo.png">
-            <div class="zagolovok">
+            <img class="Logo" src="assets/hlogo.png">
+            <div class="headline">
                 <a style="text-decoration: none; color: green;" href="../index.html">West-Tek power armor</a>
             </div>
-            <div class="search">Поиск
-                <input type="search" name="search-bar">
-                <input type="submit" name="submit" value=" ">
-            </div>
-            <div class="cart_button">Корзина</div>
-        </div>
-        <div class="hlow_style">
-            <div class="header_button">
-                <a style="text-decoration: none; color: green;" href="pages/news.html">Новости</a>
-            </div>
-            <div class="header_button">
-                <a style="text-decoration: none; color: green;" href="pages/about.html">О компании</a>
-            </div>
-            <div class="header_button">
-                <a style="text-decoration: none; color: green;" href="https://mamaikan.github.io/Nuka-Cola/index.html">Nuka-Cola</a>
-            </div>
+            <ul class="menu_style">
+                <li class="menu"><div>Меню</div>
+                    <ul class="submenu">
+                        <li class="search">
+                            <input type="search" name="search-bar" placeholder="Введите запрос">
+                            <input type="submit" name="submit" value="Поиск">
+                        </li>
+                        <li class="header_button">
+                            <a style="text-decoration: none; color: green;" href="pages/news.html">Новости</a>
+                        </li>
+                        <li class="header_button">
+                            <a style="text-decoration: none; color: green;" href="pages/about.html">О компании</a>
+                        </li>
+                        <li class="header_button">
+                            <a style="text-decoration: none; color: green;" href="https://mamaikan.github.io/Nuka-Cola/index.html">Nuka-Cola</a>
+                        </li>
+                        <li class="header_button"><a style="text-decoration: none; color: green;" href="pages/shop_item.html">Корзина</a></li>
+                    </ul>
+                </li>
+            </ul>
         </div>
     </div>
     <div class="content_box1">
@@ -63,7 +67,7 @@
         <div class="item">
             <img class="img_item" src="assets/X-01.png">
             <div class="item_description">
-                <div>Модель X-01 (ржавый)</div>
+                <div>Ржавый X-01</div>
                 <div>Цена: 129890 крышек</div>
             </div>
             <div class="item_button">
@@ -73,7 +77,7 @@
         <div class="item">
             <img class="img_item" src="assets/T-45.png">
             <div class="item_description">
-                <div>Модель T-45 (ржавый)</div>
+                <div>Ржавый T-45</div>
                 <div>Цена: 34000 крышек</div>
             </div>
             <div class="item_button">
@@ -83,7 +87,7 @@
         <div class="item">
             <img class="img_item" src="assets/T-60.png">
             <div class="item_description">
-                <div>Модель T-60 (ржавый)</div>
+                <div>Ржавый T-60</div>
                 <div>Цена: 48900 крышек</div>
             </div>
             <div class="item_button">
@@ -132,7 +136,7 @@
                 <div class="slot">
                     <img class="img_item" src="assets/t45helm.png">
                     <div class="item_description">
-                        <div>Шлем брони T-45</div>
+                        <div>Шлем силовой брони T-45</div>
                         <div>Цена: 7690 крышек</div>
                     </div>
                     <div class="item_button">
@@ -143,7 +147,7 @@
                     <img class="img_item" src="assets/RangerHelm.png">
                     <div class="item_description">
                         <div>Шлем рейнджера НКР</div>
-                        <div>Цена: 22700 крышек</div>
+                        <div>Цена: 9700 крышек</div>
                     </div>
                     <div class="item_button">
                         Страница товара
@@ -152,7 +156,7 @@
                 <div class="slot">
                     <img class="img_item" src="assets/t51helm.png">
                     <div class="item_description">
-                        <div>Шлем брони T-51b</div>
+                        <div>Шлем силовой брони T-51b</div>
                         <div>Цена: 8390 крышек</div>
                     </div>
                     <div class="item_button">
@@ -182,7 +186,7 @@
                 <div class="slot">
                     <img class="img_item" src="assets/nuka-pa.PNG">
                     <div class="item_description">
-                        <div>Набор "собери сам" Nuka-Cola edition</div>
+                        <div>Набор Nuka-Cola</div>
                         <div>Цена: 45000 крышек</div>
                     </div>
                     <div class="item_button">
@@ -192,7 +196,7 @@
                 <div class="slot">
                     <img class="img_item" src="assets/t60stat.PNG">
                     <div class="item_description">
-                        <div>Фигурка "Атом"</div>
+                        <div>Коллекционная фигурка "Атом"</div>
                         <div>Цена: 2780 крышек</div>
                     </div>
                     <div class="item_button">
@@ -213,11 +217,12 @@
         </div>
         <div class="exclude"></div>
     </div>
-    <div class="footer grid_item">
+    <div class="footer">
         <div class="footer_style1">
             <img src="assets/footer-logo.png">
             <p>
-                Данный сайт не является подлинным. Это всего лишь лабораторная работа и она в дальнейшем не превратится в новую корпорацию,
+                Данный сайт не является подлинным. Это всего лишь лабораторная работа и она в дальнейшем не превратится
+                в новую корпорацию,
                 которая поработит мир своей продукцией.
             </p>
         </div>
