@@ -1,6 +1,5 @@
 .grid_container{
     font-family:'Courier New', Courier, monospace;
-    font-size: 1em;
     display: grid;
     height: 100vh;
     margin: 0em;
@@ -10,11 +9,10 @@
 }
 .grid_container{
     grid-template-columns: 1fr;
-    grid-template-rows: 0.1fr 0.1fr 0.5fr 0.5fr 0.1fr;
+    grid-template-rows: 0.1fr 0.1fr 1fr 0.7fr;
     grid-template-areas: "header"
                          "h-low"
-                         "content1"
-                         "content2"
+                         "cont_box"
                          "footer";
 }
 .header{
@@ -85,59 +83,100 @@ ul:hover li{
     display: block;
     margin-top: 1vw;
 }
-.content_box1{
-    grid-area: content1;
-    padding: 2vw;
-}
 .category_title{
-    font-size: 10vw;
-    text-align: center;
+    font-size: 2vw;
+    text-align: left;
     color:white;
     text-shadow: black 0.1em 0.1em ;
 }
-.item{
-    margin: 1vw;
+.content_box{
+    grid-area: cont_box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 5vw;
+    padding: 1vw;
+}
+.include{
+    flex-basis: 1210px;
+    flex-shrink: 1;
+    display: flex;
+    flex-direction: column;
+    color: rgb(255, 255, 182);
+}
+.showcase{
+    display: flex;
+    flex-direction: column-reverse;
+}
+.showcase img{
+    max-width: 100%;
+    order: 4;
+    border-radius: 1vw;
+    background: white;
+    border: 2px solid black;
+}
+.showcase h2:first-of-type{
+    order: 5;
+}
+.showcase h2{
+    order: 2;
+}
+.showcase h1{
+    order:3;
+}
+.add_to_cart{
+    margin-top: 0.7vw;
+    max-width: 100%;
+    color: black;
+    order: 1;
+    font-size: 5vw;
+    font-weight: bold;
+}
+.description h2{
+    font-size: 6vw;
+}
+.description div{
+    font-size: 5vw;
+}
+.suggestion{
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+}
+.si{
+    max-width: 100%;
+    margin: 2vw;
     box-sizing: border-box;
     border: 0.07em white solid;
     border-radius: 0.5em;
-    padding: 6vw;
-    max-width:100%;
-    background:black;    
+    padding: 1vw;;
+    background:black;   
+    text-align: center; 
     color: black;
-    text-align: center;
 }
-.img_item{
+.si img{
     border: 0.1vw black solid; 
-    border-radius: 2vw;
+    border-radius: 0.5vw;
     background-color: rgb(255, 255, 255);  
-    max-width: 100%;
+    max-width: 80%;
 }
-.item_description{
-    font-size: 7vw;
-    font-weight: bold;
-    color: white;
-}
-.item_button{
-    margin-top: 0.7vw;
-    background-color: white;
+.sd{
     font-size: 6vw;
     font-weight: bold;
+    max-width: 100%;
+    color: white;
 }
-.content_box2{
-    grid-area: content2;
-    padding: 2vw;
+.sb{
+    margin-top: 0.7vw;
+    background-color: white;
+    font-size: 5vw;
+    font-weight: bold;
 }
-.slot{
-    margin: 1vw;
-    box-sizing: border-box;
-    border: 0.07em white solid;
-    border-radius: 0.5em;
-    padding: 6vw;
-    max-width:100%;
-    background:black;    
-    color: black;
-    text-align: center;
+.exclude{
+    flex-shrink: 2;
 }
+
+
 .footer{
     grid-area: footer;
     background-color: black;

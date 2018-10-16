@@ -88,18 +88,6 @@ input[type="submit"]{
     background-color: beige;
     border-color: green; 
 }
-.cart_button{
-    border: 0.1vw white solid;
-    padding: 0.35vw;
-    margin-left: 0.4vw;
-    border-radius: 0.8vw;
-    text-align: center;
-    font-size: 1.2em;
-    background-attachment: initial;
-    background-size: cover;
-    background-color: rgb(155, 60, 100);
-    font-weight: bold;
-}
 .content_box1{
     grid-area: content1;
     margin-top: 4vw;
