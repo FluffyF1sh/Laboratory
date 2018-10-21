@@ -106,20 +106,20 @@ ul:hover li{
 }
 .showcase{
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
 }
 .showcase img{
     max-width: 100%;
-    order: 4;
+    order: 2;
     border-radius: 1vw;
     background: white;
     border: 2px solid black;
 }
 .showcase h2:first-of-type{
-    order: 5;
+    order: 1;
 }
 .showcase h2{
-    order: 2;
+    order: 4;
 }
 .showcase h1{
     order:3;
@@ -128,7 +128,7 @@ ul:hover li{
     margin-top: 0.7vw;
     max-width: 100%;
     color: black;
-    order: 1;
+    order: 5;
     font-size: 5vw;
     font-weight: bold;
 }
