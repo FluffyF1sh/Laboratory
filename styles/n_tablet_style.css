@@ -165,7 +165,7 @@ ul:hover li{
     background-color: black;
 }
 .footer_style1{
-    font-size: 3vw;
+    font-size: 4vw;
     color: white;
 }
 .footer_style1 img{
@@ -177,7 +177,7 @@ ul:hover li{
 }
 .footer_style2{
     margin-left: 1vw;
-    font-size: 3vw;
+    font-size: 4vw;
     color: white;
 }
 .footer_img2{
@@ -191,10 +191,9 @@ input[type="email"]{
 }
 input[type="button"]{
     border: none;
-    font-size: 3vw;
+    font-size: 4vw;
     max-width: 100%;
 }
 .footer_img3{
     display: none;
 }
-
