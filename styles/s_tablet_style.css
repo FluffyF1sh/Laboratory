@@ -86,10 +86,9 @@ ul:hover li{
 }
 .content_box1{
     grid-area: content1;
-    padding: 0vw;
 }
 .category_title{
-    font-size: 10vw;
+    font-size: 8vw;
     text-align: center;
     color:white;
     text-shadow: black 0.1em 0.1em ;
@@ -101,7 +100,7 @@ ul:hover li{
     border: 0.07em white solid;
     border-radius: 0.5em;
     padding: 2vw;
-    width:47%;
+    max-width: 47%;
     background:black;    
     color: black;
     text-align: center;
@@ -124,7 +123,6 @@ ul:hover li{
 }
 .content_box2{
     grid-area: content2;
-    padding: 2vw;
 }
 .slot{
     display: block;

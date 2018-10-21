@@ -108,8 +108,7 @@ input[type="submit"]{
     border: 0.07em white solid;
     border-radius: 0.5em;
     padding: 1vw;
-    width:20vw; 
-    height: 26vw;
+    max-width: 20%;
     background:black;   
     text-align: center; 
     color: black;
@@ -146,8 +145,7 @@ input[type="submit"]{
     border: 0.07em white solid;
     border-radius: 0.5em;
     padding: 1vw;
-    width:20vw;
-    height: 23vw;
+    max-width: 20%;
     text-align: center; 
     background:black;    
     color: black;
